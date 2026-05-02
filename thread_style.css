@@ -1228,6 +1228,30 @@ hr { border: none; border-top: 1px solid var(--line); margin: 1rem 0; }
   aspect-ratio: 4 / 5;
   object-fit: cover;
 }
+.sample-grid .cast-card .image-pair {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  margin-bottom: 0.25rem;
+}
+.sample-grid .cast-card .image-pair img {
+  position: absolute;
+  width: 74%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  background: #f4efe8;
+}
+.sample-grid .cast-card .image-pair img.back {
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.sample-grid .cast-card .image-pair img.front {
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
 .sample-grid .cast-card h3 {
   min-height: 2.3em;
 }
@@ -1269,6 +1293,26 @@ hr { border: none; border-top: 1px solid var(--line); margin: 1rem 0; }
 }
 .sample-featured-card p:last-child {
   margin-bottom: 0;
+}
+.inspiration-figure {
+  margin: 1rem 0 0;
+}
+.inspiration-figure a {
+  display: block;
+}
+.inspiration-figure img {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  background: #f4efe8;
+}
+.inspiration-figure figcaption {
+  margin-top: 0.6rem;
+  text-align: center;
+  font-size: 0.95rem;
 }
 .sample-source-note {
   color: var(--muted);
