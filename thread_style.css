@@ -1215,6 +1215,49 @@ hr { border: none; border-top: 1px solid var(--line); margin: 1rem 0; }
 }
 
 
+.frh-network-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  margin: 0 0 1.15rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 253, 250, 0.82);
+}
+
+.frh-network-bar strong {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.frh-network-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.frh-network-links a,
+.frh-network-links span {
+  display: inline-block;
+  padding: 0.32rem 0.6rem;
+  border: 1px solid var(--line);
+  background: var(--nav);
+  color: var(--ink);
+  font-size: 0.82rem;
+  text-decoration: none;
+}
+
+.frh-network-links span[aria-current="page"] {
+  background: #eee2d2;
+  border-color: rgba(125, 88, 34, 0.28);
+  font-weight: 600;
+}
+
+
 .sample-hero {
   display: grid;
   grid-template-columns: minmax(260px, 360px) minmax(0, 1fr);
