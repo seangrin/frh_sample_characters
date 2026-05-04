@@ -1686,3 +1686,144 @@ main::after {
     vertical-align: top;
   }
 }
+
+/* ===== GMA Sheet Integration ===== */
+.sheet-article {
+  margin-top: 0.5rem;
+}
+.sheet-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) 300px;
+  gap: 28px;
+  align-items: start;
+  border-top: 3px solid var(--ink);
+  padding-top: 22px;
+  margin: 1rem 0 0;
+}
+.sheet-tagline {
+  font-size: 1.05rem;
+  margin: 0 0 14px;
+  font-style: italic;
+  color: var(--muted);
+}
+.sheet-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  font-size: 0.93rem;
+  margin: 0 0 16px;
+}
+.sheet-meta strong {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+.sheet-portrait {
+  background: #e9e3da;
+  border: 1px solid var(--line);
+  padding: 10px;
+}
+.sheet-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.sheet-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 16px 0 0;
+}
+.sheet-statbox {
+  border: 1px solid var(--line);
+  background: var(--nav);
+  padding: 9px 11px;
+  font-size: 0.92rem;
+  line-height: 1.3;
+}
+.sheet-statbox strong {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  display: block;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.sheet-section-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+.panel {
+  border: 1px solid var(--line);
+  background: var(--nav);
+  padding: 14px 16px;
+}
+.panel.full {
+  grid-column: 1 / -1;
+}
+.panel h2 {
+  font-size: 1.05rem;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-top: none;
+  padding-top: 0;
+}
+.panel h3 {
+  font-size: 0.92rem;
+  margin: 0 0 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.panel p {
+  margin: 0 0 10px;
+}
+.panel p:last-child {
+  margin-bottom: 0;
+}
+.panel ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+.panel li {
+  margin: 0 0 7px;
+}
+.panel .small {
+  font-size: 0.9rem;
+}
+.panel.powers {
+  background: #edf2f6;
+  border-color: #c2d2df;
+}
+.panel.secret {
+  background: #f0e4da;
+  border-color: #d6c4b2;
+}
+.panel.advantages {
+  background: #f1f4ec;
+  border-color: #c8d4bc;
+}
+.panel.disadvantages {
+  background: #f4ecec;
+  border-color: #d6bcbc;
+}
+.npc-banner {
+  background: #0e0e22;
+  color: #d0d0f5;
+  padding: 10px 16px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  border-left: 4px solid #3a3a8b;
+}
+@media (max-width: 860px) {
+  .sheet-hero {
+    grid-template-columns: 1fr;
+  }
+  .sheet-section-grid {
+    grid-template-columns: 1fr;
+  }
+  .sheet-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
