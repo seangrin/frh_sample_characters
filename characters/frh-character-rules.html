@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FRH Character Rules - FRH Sample Characters</title>
+  <link rel="stylesheet" href="../thread_style.css">
+</head>
+<body id="top" class="legacy-page">
+  <main class="legacy-main">
+    <div class="provenance-bar"><p>This website presentation and its added art were created with LLM assistance. The FRH game, setting, and campaign content are fully human-authored.<sup><a class="provenance-footnote" href="../memo_family.html">Memo Family</a></sup></p></div>
+    <div class="frh-network-bar">
+      <strong>FRH Player Sites</strong>
+      <div class="frh-network-links">
+        <a href="https://seangrin.github.io/frh_new_player_packet/index.html">New Player Packet</a>
+        <span aria-current="page">Sample Characters</span>
+      </div>
+    </div>
+    <header class="legacy-header">
+      <p class="part">Rules Reference</p>
+      <h1>Building an FRH Character</h1>
+      <p class="deck">The hard numbers: GURPS 3rd Edition rules as played in Followers of the Right Hand, including campaign-specific mechanics, required elements, language rules, and the FRH membership package.</p>
+    </header>
+    <div class="nav"><p><a href="../index.html">Cast Home</a> | <a href="../index.html#featured">Special Characters</a> | <a href="frh-fear-madness-corruption.html">Fear, Madness &amp; Corruption</a></p></div>
+    <div class="chapter-nav">
+      <a href="frh-fear-madness-corruption.html">Fear &amp; Madness &#8594;</a>
+      <a href="#point-budget">Point Budget</a>
+      <a href="#attributes">Attributes</a>
+      <a href="#skill-cap">Skill Cap</a>
+      <a href="#three-requirements">The Three Requirements</a>
+      <a href="#languages">Languages</a>
+      <a href="#social-stigma">Social Context</a>
+      <a class="primary" href="../index.html">Cast Home</a>
+    </div>
+    <div class="mobile-helper">
+      <a href="#top">Top</a>
+      <a href="#three-requirements">Requirements</a>
+      <a class="primary" href="../index.html">Cast Home</a>
+    </div>
+
+    <article class="sheet-article">
+      <section class="sheet-section-grid">
+
+        <!-- ═══════════════════════════════════════════
+             POINT BUDGET
+        ════════════════════════════════════════════ -->
+        <div class="panel full" id="point-budget">
+          <h2>Point Budget</h2>
+          <p>The GURPS campaign shorthand for FRH, compared to two standard benchmarks:</p>
+          <table class="rules-table">
+            <thead>
+              <tr><th>Campaign Type</th><th>Points</th><th>Disad Limit</th><th>Quirks</th><th>TL</th><th>Requirements</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Generic fantasy adventurer</td><td>100</td><td>&#8722;40</td><td>&#8722;5</td><td>3</td><td>None</td></tr>
+              <tr><td>Four-color superhero</td><td>500</td><td>&#8722;100</td><td>&#8722;5</td><td>7</td><td>None</td></tr>
+              <tr><td><strong>FRH investigator</strong></td><td><strong>375</strong></td><td><strong>&#8722;160</strong></td><td><strong>&#8722;5</strong></td><td><strong>6</strong></td><td><strong>FRH Package (&#8722;25 net)</strong></td></tr>
+            </tbody>
+          </table>
+          <p>FRH characters sit between those benchmarks in point total but carry a disadvantage ceiling higher than even four-color superheroes — driven by the mandatory institutional burdens of the required character elements. Each item in this shorthand is expanded in the sections below.</p>
+        </div>
+
+        <!-- ═══════════════════════════════════════════
+             ATTRIBUTE MECHANICS
+        ════════════════════════════════════════════ -->
+        <div class="panel full" id="attributes">
+          <h2>Attribute Mechanics</h2>
+          <p>FRH uses standard GURPS 3rd Edition attributes with one important variant rule from <em>GURPS Compendium I</em>. Know it before you build:</p>
+          <table class="rules-table">
+            <thead>
+              <tr><th>Attribute</th><th>What It Means in FRH</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>ST (Strength)</strong></td>
+                <td><strong>ST = Hit Points.</strong> In standard GURPS 3rd Edition, Hit Points are based on HT. FRH uses the optional rule from <em>GURPS Compendium I</em> (CI7) that reverses this: ST becomes the basis for Hit Points. A character with ST 12 has 12 HP.</td>
+              </tr>
+              <tr>
+                <td><strong>DX (Dexterity)</strong></td>
+                <td>Manual skill, agility, and combat reflexes. Default for many physical skills.</td>
+              </tr>
+              <tr>
+                <td><strong>IQ (Intelligence)</strong></td>
+                <td>Mental ability, perception, and willpower. Default for most knowledge and social skills. Will and Per both equal IQ unless bought up separately.</td>
+              </tr>
+              <tr>
+                <td><strong>HT (Health)</strong></td>
+                <td><strong>HT = Fatigue.</strong> In standard GURPS 3rd Edition, Fatigue is based on ST. Under the CI7 optional rule FRH uses, HT becomes the basis for Fatigue instead. A character with HT 13 has 13 FP. HT also governs recovery, resistance to disease and poison, and consciousness rolls.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><strong>Basic Speed</strong> = (HT + DX) ÷ 4. <strong>Move</strong> = Basic Speed, rounded down. These are unchanged from standard 3rd Edition.</p>
+          <p>Attribute costs are standard 3rd Edition: ST and HT cost 10 points per level above 10; DX and IQ cost 20 points per level above 10.</p>
+        </div>
+
+        <!-- ═══════════════════════════════════════════
+             SKILL POINT CAP
+        ════════════════════════════════════════════ -->
+        <div class="panel full" id="skill-cap">
+          <h2>Skill Point Cap</h2>
+          <p>The total number of character points spent on skills cannot exceed <strong>twice the character's age at the time of character creation</strong>. A 30-year-old character can have at most 60 points in skills. A 45-year-old can have at most 90.</p>
+          <p>This rule enforces believable competence. Characters who know a great deal about many things must have had the time to learn them.</p>
+          <p><strong>Exception:</strong> Unusually intensive or structured training — military special operations, certain monastic disciplines, elite professional apprenticeships — may push beyond the cap. This typically requires the <em>Unusual Background</em> or <em>Trained by Master</em> advantage and GM approval. The scope of the exception is tied to the background: a character who trained with a foreign intelligence service gets a narrower exception than one whose entire life was dedicated training from childhood.</p>
+          <p>Quirks do not count toward the cap. Advantages that function like skills (e.g., psionic skill levels, language points) may count at GM discretion.</p>
+        </div>
+
+        <!-- ═══════════════════════════════════════════
+             THE THREE REQUIREMENTS — INTRO
+        ════════════════════════════════════════════ -->
+        <div class="panel full" id="three-requirements">
+          <h2>The Three Required Elements</h2>
+          <p>Every FRH player character must satisfy three requirements. Each is encoded on the character sheet as specific advantages and disadvantages. The <a href="../index.html">sample characters</a> are the best guide to how these requirements look in practice.</p>
+          <ol>
+            <li><a href="#req-frh-package"><strong>The FRH Membership Package</strong></a> — mandatory Patron/Duty/Enemy cluster</li>
+            <li><a href="#req-secret-power"><strong>A Required Secret Power</strong></a> — a supernatural ability hidden from the public</li>
+            <li><a href="#req-secret-society"><strong>A Required Secret Society</strong></a> — a second institutional connection, separate from FRH</li>
+          </ol>
+          <p>The two required secrets — the Secret Power and the Secret Society — operate on two levels simultaneously. In the world, they are hidden from ordinary society. At the table, each player also keeps their own character's secrets from the other players; the GM knows everything, but the other investigators know only what their characters could plausibly observe. This Paranoia-derived structure keeps information asymmetry real without requiring active betrayal: real secrets, held in parallel, by people who are nominally working together.</p>
+        </div>
+
+        <!-- ═══════════════════════════════════════════
+             REQUIREMENT 1: FRH PACKAGE
+        ════════════════════════════════════════════ -->
+        <div class="panel secret" id="req-frh-package">
+          <h2>Requirement 1: The FRH Membership Package</h2>
+          <p>The Followers of the Right Hand is your character's primary supernatural institutional connection. Every FRH character takes this package exactly as written. You cannot alter its structure; you can only build around it.</p>
+          <p>The package nets out to <strong>&#8722;25 points</strong>. It costs you real disadvantages in exchange for real resources and capabilities.</p>
+
+          <h3>Patron (Followers of the Right Hand) (15 or less) [60]</h3>
+          <p>FRH is your patron organization. It provides contacts, resources, information, and access to institutional infrastructure that an ordinary private investigator cannot touch. Crucially, it grants you <em>access to magic and the supernatural in a world that officially does not believe in either</em>. Modifiers applied in this campaign:</p>
+          <ul>
+            <li><strong>Equipment: Standard [+5]</strong> — FRH can equip you with gear up to starting wealth value.</li>
+            <li><strong>Special Qualities (Access to Magic in Non-Magical World) [+10]</strong> — an unusually powerful benefit in a mundane setting: FRH can provide support, resources, and contacts that touch the supernatural directly.</li>
+            <li><strong>Secret [&#8722;5]</strong> — FRH's existence and your membership are confidential. You do not advertise this association.</li>
+            <li><strong>Minimal Intervention [&#8722;5]</strong> — FRH does not rush to your rescue. When you are in the field, you are largely on your own. The organization provides before and after, not during.</li>
+          </ul>
+          <p>The Patron appears on a roll of 15 or less — meaning FRH is almost always reachable when you need access to its resources. What it provides, and how quickly, is a separate question.</p>
+
+          <h3>Duty (Followers of the Right Hand) (15 or less) [&#8722;25]</h3>
+          <p>FRH calls on you constantly and the calls are serious. This is not a part-time obligation.</p>
+          <ul>
+            <li><strong>15 or less [&#8722;15]</strong> — FRH missions come up almost every game session.</li>
+            <li><strong>Involuntary [&#8722;5]</strong> — you did not choose this obligation. The organization chose you. You cannot simply resign.</li>
+            <li><strong>Extremely Hazardous [&#8722;5]</strong> — when FRH calls, the situation is typically dangerous. This is not a desk job.</li>
+          </ul>
+          <p>The practical consequence: your character cannot hold regular employment or obligations that would conflict with dropping everything for weeks at a time. Self-employment, retired status, independent wealth, or criminal flexibility are the viable life structures for FRH operatives.</p>
+
+          <h3>Enemy (Unknown Enemies of FRH) [&#8722;60]</h3>
+          <p>Something powerful opposes FRH, and by extension opposes you personally. You do not know who or what it is — and it can reach you through channels you do not expect.</p>
+          <ul>
+            <li><strong>Unknown [&#8722;5]</strong> — you do not know who your enemy is, which makes it impossible to prepare for specifically.</li>
+            <li><strong>Access to Magic in Non-Magical World [&#8722;15]</strong> — the enemy can deploy supernatural capabilities against you in the same way FRH can support you with them. The mundane world offers no protection against this threat.</li>
+          </ul>
+          <p>At &#8722;60 points, this is a campaign-level threat. It will not appear in every session, but when it does, it is serious. The GM tracks this Enemy — you do not know its face.</p>
+
+          <h3>Package Summary</h3>
+          <table class="rules-table">
+            <thead>
+              <tr><th>Element</th><th>Points</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Patron (FRH) (15 or less)</td><td>+60</td></tr>
+              <tr><td>Duty (15 or less)</td><td>&#8722;25</td></tr>
+              <tr><td>Enemy (Unknown Enemies of FRH)</td><td>&#8722;60</td></tr>
+              <tr class="table-total"><td><strong>Net Cost</strong></td><td><strong>&#8722;25</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ═══════════════════════════════════════════
+             REQUIREMENT 2: SECRET POWER
+        ════════════════════════════════════════════ -->
+        <div class="panel secret" id="req-secret-power">
+          <h2>Requirement 2: A Required Secret Power</h2>
+          <p>Every FRH character has a supernatural ability they conceal from ordinary society. In 1923 America, being known as a genuine psychic, a practicing sorcerer, an inhuman construct, or an impossible creature is not merely embarrassing — it is dangerous. Discovery invites exploitation, institutionalization, violence, or worse.</p>
+          <p>The Required Secret Power must be:</p>
+          <ul>
+            <li><strong>A real supernatural advantage</strong> — expressed mechanically as one or more advantages on the character sheet. This is the actual ability: the spell, the psionic power, the inhuman physical trait, the arcane edge.</li>
+            <li><strong>Hidden</strong> — accompanied by a <em>Secret</em> disadvantage reflecting the concealment requirement and the cost of exposure.</li>
+          </ul>
+          <p>The power can draw from any system FRH uses: GURPS Magic, psionics, constructed-being traits, unusual physiological advantages, or custom supernatural capabilities. Its scope should be meaningful — a character's secret power is a defining element of who they are, not a footnote.</p>
+
+          <h3>Sizing the Secret</h3>
+          <p>The point value of the <em>Secret</em> disadvantage scales with the severity of consequences if exposure occurs — ranging from serious embarrassment (&#8722;5) to possible death (&#8722;30). For the full scale and the rules governing what happens when a Secret is exposed, see <em>GURPS Compendium I</em> (CI78). Most FRH Secret Powers carry a Secret of &#8722;20 to &#8722;30. The GM has final say on appropriate value.</p>
+
+        </div>
+
+        <!-- ═══════════════════════════════════════════
+             REQUIREMENT 3: SECRET SOCIETY
+        ════════════════════════════════════════════ -->
+        <div class="panel secret" id="req-secret-society">
+          <h2>Requirement 3: A Required Secret Society</h2>
+          <p>Every FRH character belongs to a second institutional network — a secret society, hidden fraternal body, covert organization, or underground community — that is <em>separate from and independent of FRH</em>. FRH does not count toward this requirement.</p>
+          <p>This requirement exists to give each character an independent institutional life with its own secrets, contacts, obligations, and dramatic potential. It also means every character is carrying more than one hidden layer — which is consistent with the morally complex world of 1923 FRH, where everyone interesting has something they are not telling you.</p>
+          <p>The secret society can be anything with a plausible claim to secrecy: a fraternal lodge, a criminal network, a practitioner tradition, a government back-channel, an ideological underground, a supernatural lineage, or an informal community that must hide to survive. What matters is that the affiliation is <em>kept hidden</em> and that it carries <em>real consequences if exposed</em>.</p>
+
+          <h3>How to Encode It</h3>
+          <p>There are three valid patterns, each shown in the library:</p>
+
+          <p><strong>Option A — Patron + Secret</strong> (most common)</p>
+          <p>A formal <em>Patron</em> advantage represents the organization — what it provides, how reliably it appears, and its power level. A separate <em>Secret</em> disadvantage (typically &#8722;5 to &#8722;10) covers the concealment requirement. The Patron advantage carries a Secret modifier built into its cost.</p>
+
+          <p><strong>Option B — Secret only, no Patron</strong></p>
+          <p>When the society connection is more a covert obligation or back-channel than an active support network, a <em>Secret</em> disadvantage alone is sufficient. No Patron advantage is required. The Secret value should reflect the real danger of the connection being discovered, not just the inconvenience.</p>
+
+          <p><strong>Option C — Dual-purpose Secret (no separate encoding)</strong></p>
+          <p>When the character's society membership is directly tied to their power source — for example, a practitioner community that produced and sustains the power — a single <em>Secret</em> disadvantage can cover both the Required Secret Power and the Required Secret Society simultaneously. This is uncommon and requires GM approval. The Secret value must be high enough to reflect both layers of concealment.</p>
+
+          <h3>Society Types: Examples</h3>
+          <p>The society does not have to be supernatural. Legitimate secrecy in 1923 covers a wide range:</p>
+          <ul>
+            <li><strong>Fraternal / occult orders:</strong> Freemasons, Knights of Columbus, Theosophical Society, Hermetic lodges, Rosicrucians</li>
+            <li><strong>Political underground:</strong> Communist Party cells, labor sabotage networks, anarchist cells, IWW back-channels</li>
+            <li><strong>Criminal networks:</strong> bootlegging operations, organized crime families, gambling syndicates</li>
+            <li><strong>Government back-channels:</strong> secret agency mandates, intelligence service informant relationships, off-book law enforcement networks</li>
+            <li><strong>Social underground:</strong> homosexual social networks (illegal in most of America), interracial organizations operating under cover, underground press</li>
+            <li><strong>Supernatural practitioner traditions:</strong> surviving old-ways networks, Vodou congregations, Theosophical inner circles, esoteric lineages</li>
+          </ul>
+        </div>
+
+        <!-- ═══════════════════════════════════════════
+             LANGUAGE RULES
+        ════════════════════════════════════════════ -->
+        <div class="panel full" id="languages">
+          <h2>Language Rules</h2>
+          <p>FRH uses <strong>GURPS 4th Edition language rules</strong>. Every character begins with their native language at no cost — Native spoken and Native written, both for free. Note your native language on your sheet as, e.g., <em>English (Native) [0]</em>.</p>
+          <p>Additional languages cost points based on <strong>comprehension level</strong> — how well you function in that language overall. Spoken and written levels are purchased separately.</p>
+
+          <table class="rules-table">
+            <thead>
+              <tr><th>Level</th><th>Spoken Cost</th><th>Written Cost</th><th>Skill Penalty</th><th>What It Means</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>None</strong></td><td>0</td><td>0</td><td>Cannot use</td><td>You don't know the language at all.</td></tr>
+              <tr><td><strong>Broken</strong></td><td>1</td><td>1</td><td>&#8722;3</td><td>Enough to get by in daily life. Written Broken = semi-literate: roll vs. IQ just to get the basic meaning.</td></tr>
+              <tr><td><strong>Accented</strong></td><td>2</td><td>2</td><td>&#8722;1</td><td>Clear communication with a noticeable accent or non-native cadence.</td></tr>
+              <tr><td><strong>Native</strong></td><td>3</td><td>3</td><td>None</td><td>Indistinguishable from an educated native speaker/reader.</td></tr>
+            </tbody>
+          </table>
+
+          <p><strong>Literacy</strong> follows from your written comprehension level:</p>
+          <ul>
+            <li><strong>Illiterate</strong> — written level None. You cannot read the language at all.</li>
+            <li><strong>Semi-literate</strong> — written level Broken. You can decode text slowly; must roll vs. IQ to extract basic meaning.</li>
+            <li><strong>Literate</strong> — written level Accented or Native. Full reading and writing speed.</li>
+          </ul>
+          <p>Your native language gives you Native written comprehension for free. Being <em>less</em> literate in your native language is a disadvantage: &#8722;1 point for Accented written, &#8722;2 for Broken, &#8722;3 for None (illiterate).</p>
+          <p>The skill penalty applies whenever using a skill that depends on that language — Fast-Talk, Diplomacy, Research, Law, Writing, etc. A Broken speaker using Diplomacy in a foreign language is at &#8722;3 before any other modifiers.</p>
+          <p>FRH frequently opens investigations in multilingual environments. Investment in relevant languages is rarely wasted.</p>
+        </div>
+
+        <!-- ═══════════════════════════════════════════
+             SOCIAL CONTEXT / SOCIAL STIGMA
+        ════════════════════════════════════════════ -->
+        <div class="panel full" id="social-stigma">
+          <h2>Social Context: 1923 America</h2>
+          <p>1923 America is the world as it actually was. It is stratified, discriminatory, and structured around a white Protestant male Christian normativity that the law and custom actively enforced. FRH does not soften this reality or turn it into color. It uses it as terrain.</p>
+          <p>Characters who fall outside the dominant social category — on the basis of race, sex, religion, sexual orientation, national origin, or class — face <strong>Social Stigma</strong> as a disadvantage. This is not window dressing. Social Stigma imposes real penalties on reaction rolls and social skill use in contexts where period-accurate discrimination applies.</p>
+
+          <h3>The Baseline</h3>
+          <p><strong>Social Stigma (2nd-class citizen) [&#8722;5]</strong> is the minimum for any character who is not a white heterosexual Protestant man and who operates in mainstream American contexts. This covers women in professional settings, Jewish men in certain institutions, Catholic men in Protestant-dominated jurisdictions, and many other situations. The specific situations where the stigma applies depend on character background and setting.</p>
+          <p>Deeper categories of marginalization carry higher values. A Black man navigating 1923 American law enforcement, a Chinese immigrant dealing with federal immigration agencies, or a woman attempting to operate as an independent legal professional in most jurisdictions faces more than &#8722;5 points of structural obstacle.</p>
+
+          <h3>The Offset</h3>
+          <p>Marginalized backgrounds frequently carry genuine access that majority characters cannot replicate. A character from outside the dominant culture may have knowledge, contacts, skills, and institutional relationships that no white Protestant man has — because the networks they navigate are invisible to that man by design.</p>
+          <p><strong>Unusual Background</strong> (value varies) can encode this access formally: specialized training, esoteric knowledge, exotic institutional connections, or perspectives that the dominant culture does not teach and cannot easily buy. The value depends on how far outside the mainstream the background reaches and what it actually provides. A British Raj-trained lawyer who knows Imperial Indian bureaucracy inside-out has a different Unusual Background than someone who trained in a surviving pre-Columbian ritual tradition.</p>
+          <p>Social Stigma and Unusual Background are not required to cancel each other out. A character can have &#8722;10 in Social Stigma and +15 in Unusual Background — the stigma is real, the access is real, and both are in play simultaneously depending on context.</p>
+
+          <h3>Design Guidance</h3>
+          <p>Treat Social Stigma as a first-order design consideration, not an afterthought. If your character concept places them outside the dominant category in any significant dimension, work out the Stigma value during initial concept — before you finalize attributes. The stigma shapes which skills matter, which contacts are available, and what the character needs to do to move through spaces the dominant culture controls.</p>
+          <p>This is a setting that critiques the dominant culture while portraying it accurately. Characters with Social Stigma are not less interesting — they are often more so, because the world gives them harder problems and sharper tools in different registers.</p>
+        </div>
+
+        <!-- ═══════════════════════════════════════════
+             NEXT: FEAR, MADNESS, AND CORRUPTION
+        ════════════════════════════════════════════ -->
+        <div class="panel full">
+          <h2>Fear, Madness, and Corruption</h2>
+          <p>FRH uses an adapted version of the fear, stress, derangement, and corruption rules from GURPS Horror (4th Edition). These mechanics are covered on a separate page.</p>
+          <p><a href="frh-fear-madness-corruption.html">Fear, Madness, and Corruption</a> — Fright Checks, Stress, Derangement, Insanity, and Corruption rules.</p>
+        </div>
+
+      </section>
+    </article>
+
+    <div class="page-footer">
+      <div class="chapter-nav">
+        <a href="frh-fear-madness-corruption.html">Fear &amp; Madness &#8594;</a>
+        <a class="primary" href="../index.html">Cast Home</a>
+      </div>
+      <p><a href="#top">Return to Top</a></p>
+      <p class="footer-note">Rules content based on GURPS 3rd Edition (Steve Jackson Games) with campaign-specific modifications by the FRH GM. Language rules from GURPS 4th Edition. Social Stigma framing is campaign-original.</p>
+    </div>
+  </main>
+</body>
+</html>

@@ -1687,6 +1687,31 @@ main::after {
   }
 }
 
+/* ===== Rules Reference Tables ===== */
+.rules-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.93rem;
+  margin: 0.6rem 0 0.9rem;
+}
+.rules-table th,
+.rules-table td {
+  border: 1px solid var(--line);
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+.rules-table th {
+  background: rgba(91, 45, 42, 0.07);
+  color: var(--accent);
+  font-size: 0.87rem;
+  letter-spacing: 0.03em;
+}
+.rules-table .table-total td {
+  border-top: 2px solid var(--line);
+  background: rgba(0,0,0,0.03);
+}
+
 /* ===== GMA Sheet Integration ===== */
 .sheet-article {
   margin-top: 0.5rem;
