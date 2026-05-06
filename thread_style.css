@@ -1279,7 +1279,7 @@ hr { border: none; border-top: 1px solid var(--line); margin: 1rem 0; }
 }
 main {
   position: relative;
-  overflow: hidden;
+  overflow: clip;
   background-image:
     radial-gradient(circle at 28px 28px, rgba(215, 176, 92, 0.92) 0 1.5px, rgba(215, 176, 92, 0.26) 2px 7px, transparent 8px),
     radial-gradient(circle at calc(100% - 28px) 28px, rgba(215, 176, 92, 0.92) 0 1.5px, rgba(215, 176, 92, 0.26) 2px 7px, transparent 8px),
@@ -1695,7 +1695,7 @@ main::after {
 }
 
 .rules-table {
-  width: 100%;
+  min-width: 100%;
   border-collapse: collapse;
   font-size: 0.93rem;
   margin: 0;
