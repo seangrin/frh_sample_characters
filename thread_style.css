@@ -1685,19 +1685,20 @@ main::after {
     padding: 0.18rem 0.45rem 0.18rem 0;
     vertical-align: top;
   }
-  .rules-table {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
 }
 
 /* ===== Rules Reference Tables ===== */
+.rules-table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0.6rem 0 0.9rem;
+}
+
 .rules-table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.93rem;
-  margin: 0.6rem 0 0.9rem;
+  margin: 0;
 }
 .rules-table th,
 .rules-table td {
