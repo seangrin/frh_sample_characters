@@ -47,16 +47,38 @@
         <div class="panel full" id="point-budget">
           <h2>Point Budget</h2>
           <p>The GURPS campaign shorthand for FRH, compared to two standard benchmarks:</p>
-          <div class="rules-table-scroll"><table class="rules-table">
-            <thead>
-              <tr><th>Campaign Type</th><th>Points</th><th>Disad Limit</th><th>Quirks</th><th>TL</th><th>Requirements</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Generic fantasy adventurer</td><td>100</td><td>&#8722;40</td><td>&#8722;5</td><td>3</td><td>None</td></tr>
-              <tr><td>Four-color superhero</td><td>500</td><td>&#8722;100</td><td>&#8722;5</td><td>7</td><td>None</td></tr>
-              <tr><td><strong>FRH investigator</strong></td><td><strong>375</strong></td><td><strong>&#8722;160</strong></td><td><strong>&#8722;5</strong></td><td><strong>6</strong></td><td><strong>FRH Package (&#8722;25 net)</strong></td></tr>
-            </tbody>
-          </table></div>
+          <div class="stat-cards">
+            <div class="stat-card">
+              <h4>Generic Fantasy Adventurer</h4>
+              <dl>
+                <dt>Points</dt><dd>100</dd>
+                <dt>Disad Limit</dt><dd>&#8722;40</dd>
+                <dt>Quirks</dt><dd>&#8722;5</dd>
+                <dt>TL</dt><dd>3</dd>
+                <dt>Requirements</dt><dd>None</dd>
+              </dl>
+            </div>
+            <div class="stat-card">
+              <h4>Four-Color Superhero</h4>
+              <dl>
+                <dt>Points</dt><dd>500</dd>
+                <dt>Disad Limit</dt><dd>&#8722;100</dd>
+                <dt>Quirks</dt><dd>&#8722;5</dd>
+                <dt>TL</dt><dd>7</dd>
+                <dt>Requirements</dt><dd>None</dd>
+              </dl>
+            </div>
+            <div class="stat-card featured">
+              <h4>FRH Investigator</h4>
+              <dl>
+                <dt>Points</dt><dd>375</dd>
+                <dt>Disad Limit</dt><dd>&#8722;160</dd>
+                <dt>Quirks</dt><dd>&#8722;5</dd>
+                <dt>TL</dt><dd>6</dd>
+                <dt>Requirements</dt><dd>FRH Package (&#8722;25 net)</dd>
+              </dl>
+            </div>
+          </div>
           <p>FRH characters sit between those benchmarks in point total but carry a disadvantage ceiling higher than even four-color superheroes — driven by the mandatory institutional burdens of the required character elements. Each item in this shorthand is expanded in the sections below.</p>
         </div>
 
@@ -66,29 +88,16 @@
         <div class="panel full" id="attributes">
           <h2>Attribute Mechanics</h2>
           <p>FRH uses standard GURPS 3rd Edition attributes with one important variant rule from <em>GURPS Compendium I</em>. Know it before you build:</p>
-          <div class="rules-table-scroll"><table class="rules-table">
-            <thead>
-              <tr><th>Attribute</th><th>What It Means in FRH</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>ST (Strength)</strong></td>
-                <td><strong>ST = Hit Points.</strong> In standard GURPS 3rd Edition, Hit Points are based on HT. FRH uses the optional rule from <em>GURPS Compendium I</em> (CI7) that reverses this: ST becomes the basis for Hit Points. A character with ST 12 has 12 HP.</td>
-              </tr>
-              <tr>
-                <td><strong>DX (Dexterity)</strong></td>
-                <td>Manual skill, agility, and combat reflexes. Default for many physical skills.</td>
-              </tr>
-              <tr>
-                <td><strong>IQ (Intelligence)</strong></td>
-                <td>Mental ability, perception, and willpower. Default for most knowledge and social skills. Will and Per both equal IQ unless bought up separately.</td>
-              </tr>
-              <tr>
-                <td><strong>HT (Health)</strong></td>
-                <td><strong>HT = Fatigue.</strong> In standard GURPS 3rd Edition, Fatigue is based on ST. Under the CI7 optional rule FRH uses, HT becomes the basis for Fatigue instead. A character with HT 13 has 13 FP. HT also governs recovery, resistance to disease and poison, and consciousness rolls.</td>
-              </tr>
-            </tbody>
-          </table></div>
+          <dl class="rules-dl">
+            <dt>ST (Strength)</dt>
+            <dd><strong>ST = Hit Points.</strong> In standard GURPS 3rd Edition, Hit Points are based on HT. FRH uses the optional rule from <em>GURPS Compendium I</em> (CI7) that reverses this: ST becomes the basis for Hit Points. A character with ST 12 has 12 HP.</dd>
+            <dt>DX (Dexterity)</dt>
+            <dd>Manual skill, agility, and combat reflexes. Default for many physical skills.</dd>
+            <dt>IQ (Intelligence)</dt>
+            <dd>Mental ability, perception, and willpower. Default for most knowledge and social skills. Will and Per both equal IQ unless bought up separately.</dd>
+            <dt>HT (Health)</dt>
+            <dd><strong>HT = Fatigue.</strong> In standard GURPS 3rd Edition, Fatigue is based on ST. Under the CI7 optional rule FRH uses, HT becomes the basis for Fatigue instead. A character with HT 13 has 13 FP. HT also governs recovery, resistance to disease and poison, and consciousness rolls.</dd>
+          </dl>
           <p><strong>Basic Speed</strong> = (HT + DX) ÷ 4. <strong>Move</strong> = Basic Speed, rounded down. These are unchanged from standard 3rd Edition.</p>
           <p>Attribute costs are standard 3rd Edition: ST and HT cost 10 points per level above 10; DX and IQ cost 20 points per level above 10.</p>
         </div>
@@ -154,17 +163,12 @@
           <p>At &#8722;60 points, this is a campaign-level threat. It will not appear in every session, but when it does, it is serious. The GM tracks this Enemy — you do not know its face.</p>
 
           <h3>Package Summary</h3>
-          <div class="rules-table-scroll"><table class="rules-table">
-            <thead>
-              <tr><th>Element</th><th>Points</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Patron (FRH) (15 or less)</td><td>+60</td></tr>
-              <tr><td>Duty (15 or less)</td><td>&#8722;25</td></tr>
-              <tr><td>Enemy (Unknown Enemies of FRH)</td><td>&#8722;60</td></tr>
-              <tr class="table-total"><td><strong>Net Cost</strong></td><td><strong>&#8722;25</strong></td></tr>
-            </tbody>
-          </table></div>
+          <ul class="rules-modlist">
+            <li><span>Patron (FRH) (15 or less)</span><span class="rules-mod">+60</span></li>
+            <li><span>Duty (15 or less)</span><span class="rules-mod">&#8722;25</span></li>
+            <li><span>Enemy (Unknown Enemies of FRH)</span><span class="rules-mod">&#8722;60</span></li>
+            <li class="total"><span><strong>Net Cost</strong></span><span class="rules-mod"><strong>&#8722;25</strong></span></li>
+          </ul>
         </div>
 
         <!-- ═══════════════════════════════════════════
@@ -226,17 +230,44 @@
           <p>FRH uses <strong>GURPS 4th Edition language rules</strong>. Every character begins with their native language at no cost — Native spoken and Native written, both for free. Note your native language on your sheet as, e.g., <em>English (Native) [0]</em>.</p>
           <p>Additional languages cost points based on <strong>comprehension level</strong> — how well you function in that language overall. Spoken and written levels are purchased separately.</p>
 
-          <div class="rules-table-scroll"><table class="rules-table">
-            <thead>
-              <tr><th>Level</th><th>Spoken Cost</th><th>Written Cost</th><th>Skill Penalty</th><th>What It Means</th></tr>
-            </thead>
-            <tbody>
-              <tr><td><strong>None</strong></td><td>0</td><td>0</td><td>Cannot use</td><td>You don't know the language at all.</td></tr>
-              <tr><td><strong>Broken</strong></td><td>1</td><td>1</td><td>&#8722;3</td><td>Enough to get by in daily life. Written Broken = semi-literate: roll vs. IQ just to get the basic meaning.</td></tr>
-              <tr><td><strong>Accented</strong></td><td>2</td><td>2</td><td>&#8722;1</td><td>Clear communication with a noticeable accent or non-native cadence.</td></tr>
-              <tr><td><strong>Native</strong></td><td>3</td><td>3</td><td>None</td><td>Indistinguishable from an educated native speaker/reader.</td></tr>
-            </tbody>
-          </table></div>
+          <div class="stat-cards">
+            <div class="stat-card">
+              <h4>None</h4>
+              <dl>
+                <dt>Spoken cost</dt><dd>0</dd>
+                <dt>Written cost</dt><dd>0</dd>
+                <dt>Skill penalty</dt><dd>Cannot use</dd>
+                <dt>What it means</dt><dd>You don't know the language at all.</dd>
+              </dl>
+            </div>
+            <div class="stat-card">
+              <h4>Broken</h4>
+              <dl>
+                <dt>Spoken cost</dt><dd>1</dd>
+                <dt>Written cost</dt><dd>1</dd>
+                <dt>Skill penalty</dt><dd>&#8722;3</dd>
+                <dt>What it means</dt><dd>Enough to get by in daily life. Written Broken = semi-literate: roll vs. IQ just to get the basic meaning.</dd>
+              </dl>
+            </div>
+            <div class="stat-card">
+              <h4>Accented</h4>
+              <dl>
+                <dt>Spoken cost</dt><dd>2</dd>
+                <dt>Written cost</dt><dd>2</dd>
+                <dt>Skill penalty</dt><dd>&#8722;1</dd>
+                <dt>What it means</dt><dd>Clear communication with a noticeable accent or non-native cadence.</dd>
+              </dl>
+            </div>
+            <div class="stat-card featured">
+              <h4>Native</h4>
+              <dl>
+                <dt>Spoken cost</dt><dd>3</dd>
+                <dt>Written cost</dt><dd>3</dd>
+                <dt>Skill penalty</dt><dd>None</dd>
+                <dt>What it means</dt><dd>Indistinguishable from an educated native speaker/reader.</dd>
+              </dl>
+            </div>
+          </div>
 
           <p><strong>Literacy</strong> follows from your written comprehension level:</p>
           <ul>

@@ -1687,35 +1687,142 @@ main::after {
   }
 }
 
-/* ===== Rules Reference Tables ===== */
-.rules-table-scroll {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+/* ===== Rules Reference: Modifier List ===== */
+.rules-modlist {
+  list-style: none;
+  padding: 0;
   margin: 0.6rem 0 0.9rem;
+  border-top: 1px solid var(--line);
 }
-
-.rules-table {
-  min-width: 100%;
-  border-collapse: collapse;
+.rules-modlist li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.32rem 0.5rem;
+  border-bottom: 1px solid var(--line);
   font-size: 0.93rem;
-  margin: 0;
 }
-.rules-table th,
-.rules-table td {
-  border: 1px solid var(--line);
-  padding: 0.4rem 0.6rem;
-  text-align: left;
-  vertical-align: top;
-}
-.rules-table th {
-  background: rgba(91, 45, 42, 0.07);
-  color: var(--accent);
-  font-size: 0.87rem;
-  letter-spacing: 0.03em;
-}
-.rules-table .table-total td {
+.rules-modlist li.total {
   border-top: 2px solid var(--line);
   background: rgba(0,0,0,0.03);
+  margin-top: -1px;
+}
+.rules-mod {
+  font-weight: bold;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ===== Rules Reference: Definition List ===== */
+.rules-dl {
+  margin: 0.6rem 0 0.9rem;
+  padding: 0;
+}
+.rules-dl dt {
+  font-weight: bold;
+  color: var(--accent);
+  margin-top: 0.75rem;
+}
+.rules-dl dt:first-child {
+  margin-top: 0;
+}
+.rules-dl dd {
+  margin: 0.2rem 0 0 1.1rem;
+}
+
+/* ===== Rules Reference: Stat Cards ===== */
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.65rem;
+  margin: 0.6rem 0 0.9rem;
+}
+.stat-card {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  padding: 0.75rem 0.85rem;
+}
+.stat-card.featured {
+  background: #f0e4da;
+  border-color: #d6c4b2;
+}
+.stat-card h4 {
+  margin: 0 0 0.45rem;
+  font-size: 0.92rem;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.stat-card-sub {
+  margin: -0.3rem 0 0.5rem;
+  font-size: 0.84rem;
+  color: var(--muted);
+  font-style: italic;
+}
+.stat-card dl {
+  margin: 0;
+  font-size: 0.92rem;
+}
+.stat-card dt {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 0.45rem;
+}
+.stat-card dt:first-child {
+  margin-top: 0;
+}
+.stat-card dd {
+  margin: 0.1rem 0 0;
+  font-weight: bold;
+}
+
+/* ===== Rules Reference: Accordion ===== */
+.rules-accordion {
+  margin: 0.6rem 0 0.9rem;
+}
+.rules-accordion details {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  margin-bottom: 0.3rem;
+}
+.rules-accordion details[open] {
+  background: var(--nav);
+}
+.rules-accordion summary {
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.92rem;
+  color: var(--accent);
+  list-style: none;
+  user-select: none;
+}
+.rules-accordion summary::-webkit-details-marker { display: none; }
+.rules-accordion summary::before { content: "+ "; }
+.rules-accordion details[open] summary::before { content: "− "; }
+.rules-accordion ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0.75rem 0.6rem;
+}
+.rules-accordion li {
+  padding: 0.28rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.93rem;
+}
+.rules-accordion li:last-child {
+  border-bottom: none;
+}
+.roll-num {
+  font-weight: bold;
+  color: var(--accent);
+  margin-right: 0.4rem;
 }
 
 /* ===== GMA Sheet Integration ===== */
